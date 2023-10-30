@@ -1,6 +1,6 @@
 # Hand Tracking Module Project
 
-![Hand Tracking](hand_tracking.gif)
+![Hand Tracking](hand.mp4)
 
 This repository contains a Python-based hand tracking module that uses OpenCV (cv2), MediaPipe, and the time library to detect and track hands in real-time video streams or recorded videos. It's a versatile module that can be integrated into various applications, including gesture recognition, sign language interpretation, and interactive interfaces.
 
