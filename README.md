@@ -45,15 +45,21 @@ To use the hand tracking module in your project, import it as follows:
 ```python
 
  import handtrackingmodule
+# Create an instance of the handDetector class
+detector = handDetector()
 
-# Initialize the hand tracker
-hand_tracker = HandTracker()
+# Perform hand tracking on a frame (img is the frame)
+img = detector.findHands(img)
 
-# Process a frame
-frame = cv2.imread("frame.jpg")
-hand_tracker.process(frame)
+# Find hand positions if needed
+lmList = detector.findPosition(img)
 
-# Get hand landmarks
-landmarks = hand_tracker.get_landmarks()
 ```
 You can then use the landmarks to perform various hand tracking and gesture recognition tasks in your application.
+
+# Example
+For a complete example of how to use the hand tracking module, check out the [example.py](example.py) file in this repository. It demonstrates how to process video input and visualize hand landmarks.
+
+
+# Contributing
+Contributions to this project are welcome! If you find a bug or have an enhancement in mind, please open an issue or submit a pull request. For major changes, please discuss your ideas in an issue first.
